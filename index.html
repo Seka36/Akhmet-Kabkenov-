@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ахмет Кабкенов — Официальный сайт артиста балета</title>
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --text-color: #c5c6c7;
+            --accent-color: #c5a880; /* Благородное золото */
+            --light-bg: #1f2833;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1200') no-repeat center center/cover;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin: 10px 0 0 0;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #fff;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card ul li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ахмет Кабкенов</h1>
+        <p>Артист балета театра «Астана Опера»</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>О солисте</h2>
+            <p class="bio-text">
+                Ахмет Кабкенов — яркий представитель молодого поколения казахстанского балетного искусства, артист балетной труппы Государственного театра оперы и балета «Астана Опера». Выпускник Казахской национальной академии хореографии. Творческий диапазон артиста охватывает как строгую академическую классику, так и монументальные эпические полотна XX века, а также сложные концептуальные постановки современных хореографов.
+            </p>
+        </section>
+
+        <section id="repertoire">
+            <h2>Творческий репертуар</h2>
+            
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Классическое наследие</h3>
+                    <ul>
+                        <li><strong>Двойка кавалеров в Grand Pas</strong> — «Баядерка» Л. Минкуса</li>
+                        <li><strong>Ганс</strong> — «Жизель» А. Адана</li>
+                        <li><strong>Вильфрид</strong> — «Жизель» А. Адана</li>
+                        <li><strong>Главный кавалер</strong> — «Спящая красавица» П. Чайковского</li>
+                        <li><strong>Принц</strong> — «Щелкунчик» П. Чайковского</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Шедевры Ю. Григоровича</h3>
+                    <ul>
+                        <li><strong>Дроссельмейер</strong> — «Щелкунчик»</li>
+                        <li><strong>Штальбаум</strong> — «Щелкунчик»</li>
+                        <li><strong>Центр в «сцене разложения»</strong> — «Спартак» А. Хачатуряна</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Характерный танец</h3>
+                    <ul>
+                        <li><strong>Двойка тореадоров</strong> — «Дон Кихот» Л. Минкуса</li>
+                        <li><strong>Юноши (соло)</strong> — «Бахчисарайский фонтан» Б. Асафьева</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Модерн и неоклассика</h3>
+                    <ul>
+                        <li><strong>Дон Хозе</strong> — «Кармен»</li>
+                        <li><strong>Йозеф Гайдн</strong> — «Бетховен – Бессмертие – Любовь» (хор. Р. Ребека)</li>
+                        <li><strong>Па-де-де из балета «Кармен»</strong> — (хор. Р. Пети)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ахмет Кабкенов. Официальное портфолио. Артист балета <a href="https://astanaopera.kz/" target="_blank">«Астана Опера»</a>.</p>
+    </footer>
+
+</body>
+</html>
